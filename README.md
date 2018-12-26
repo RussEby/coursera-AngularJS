@@ -8,3 +8,5 @@ A Repo for the Coursera Coursework.
 [Assignment 1](https://russeby.github.io/coursera-AngularJS/Assignment1) has been finished.
 
 If you have comments, please feel free to discuss them. Just keep in mind, I'm following very specific instructions from the instructor.
+
+Thank you
