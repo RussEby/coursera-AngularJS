@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LunchCheck">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lunch Checker</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    
+</head>
+
+<body>
+    <div class="container" ng-controller="LunchCheckController">
+        <div class="form-group">
+            <input 
+                type="text" 
+                id="lunch-menu" 
+                placeholder="list coma separated dishes you usually have for lunch"
+                class="form-control"
+                ng-model="newItems">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-default" ng-click="getNewItems()">
+                Check If Too Much
+            </button>
+        </div>
+        <div class="form-group message">
+            <!-- Your message can go here. -->
+            {{message}}
+        </div>
+    </div>
+</body>
+
+</html>
